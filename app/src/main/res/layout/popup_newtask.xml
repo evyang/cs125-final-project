@@ -23,7 +23,7 @@
             android:text="Task Name" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/event"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -46,7 +46,7 @@
             android:text="Date Due" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -54,7 +54,7 @@
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/time"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

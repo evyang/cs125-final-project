@@ -34,9 +34,11 @@
         app:navGraph="@navigation/mobile_navigation" />
 
     <LinearLayout
+        android:id="@+id/homeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment">
 
         <TextView
             android:id="@+id/welcomeQuote"
@@ -45,18 +47,19 @@
             android:text="Welcome Quote"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-        <Button
-            android:id="@+id/addTask"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="addTaskPopup"
-            android:text="Add Task" />
-
         <LinearLayout
             android:id="@+id/taskList"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:orientation="vertical" />
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addTaskPopup"
+                android:text="Add Task" />
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -64,7 +67,8 @@
         android:id="@+id/imageView2"
         android:layout_width="420dp"
         android:layout_height="200dp"
-        app:srcCompat="@color/Coral"
-        tools:layout_editor_absoluteY="423dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeLayout"
+        app:srcCompat="@color/Coral" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
