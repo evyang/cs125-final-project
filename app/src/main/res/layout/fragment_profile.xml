@@ -20,13 +20,13 @@
                 android:layout_width="282dp"
                 android:layout_height="107dp"
                 android:layout_weight="1"
-                app:srcCompat="@color/Coral" />
+                android:src="@drawable/usericon" />
 
             <TextView
                 android:id="@+id/profileTitle"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:text="User Name"
+                android:text="Geoff Challen"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         </LinearLayout>

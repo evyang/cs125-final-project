@@ -19,8 +19,8 @@ public class Profile extends AppCompatActivity {
     private void upDateUI() {
         TextView totalTask = findViewById(R.id.taskTotal);
         TextView completeTask = findViewById(R.id.taskComplete);
-        completeTask.setText("Total Task Completed: " + (MainActivity.getCompleteTask()));
-        totalTask.setText("Total Task Completed: " + (MainActivity.getTotalTask()));
+        completeTask.setText("Total Completed Tasks : " + (MainActivity.getCompleteTask()));
+        totalTask.setText("Total Tasks of All Time : " + (MainActivity.getTotalTask()));
     }
 
     @Override
