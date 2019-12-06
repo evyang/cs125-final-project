@@ -32,12 +32,13 @@ public class AddTask extends AppCompatActivity {
 
         Button addTask = findViewById(R.id.addingTask);
         Button cancelTask = findViewById(R.id.cancelTask);
-        addTask.setOnClickListener(unused -> addTask());
-        cancelTask.setOnClickListener(unused -> finish());
+        //addTask.setOnClickListener(unused -> addTask());
+        //cancelTask.setOnClickListener(unused -> finish());
     }
+    /**
     private void addTask() {
         TextView e = findViewById(R.id.event);
-        String eventName = e.getText().toString();
+        String eventName= e.getText().toString();
         TextView d = findViewById(R.id.date);
         String date = d.getText().toString();
         if (!(eventName.equals(""))) {
@@ -47,17 +48,20 @@ public class AddTask extends AppCompatActivity {
         }
         finish();
     }
+
     private void updatePlayersUI() {
-        LinearLayout playersList = findViewById(R.id.taskList);
-        playersList.removeAllViews();
+        LinearLayout tasksList = findViewById(R.id.taskList);
+        tasksList.removeAllViews();
         for (int i = 0; i < tasks.size(); i++) {
             Task task = tasks.get(i);
-            View inviteeView = getLayoutInflater().inflate(R.layout.chunk_tasks,
-                    playersList, false);
-            TextView eN = inviteeView.findViewById(R.id.taskName);
+            View taskView = getLayoutInflater().inflate(R.layout.chunk_tasks,
+                    tasksList, false);
+            TextView eN = taskView.findViewById(R.id.taskName);
             //TextView eD = inviteeView.findViewById(R.id.date);
             eN.setText(task.getName());
             //eD.setText(task.getDate());
+            tasksList.addView(taskView);
         }
     }
+     */
 }

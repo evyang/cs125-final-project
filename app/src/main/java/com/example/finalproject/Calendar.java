@@ -13,10 +13,6 @@ public class Calendar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_calendar);
 
-        //LinearLayout homeLayout = findViewById(R.id.homeLayout);
-        //homeLayout.setVisibility(View.GONE);
-        Button addTask = findViewById(R.id.addTask);
-        addTask.setVisibility(View.GONE);
     }
 
 }
