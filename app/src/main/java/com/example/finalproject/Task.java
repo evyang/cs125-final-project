@@ -1,23 +1,24 @@
 package com.example.finalproject;
 
-public final class Task {
+public class Task {
     private String name;
-    private String date;
+    private boolean state;
 
-    public Task(final String setName, final String setDate) {
+    public Task (String setName){
         name = setName;
-        date = setDate;
+        state = false;
+    }
+
+    public void setName(String nameInput) {
+        name = nameInput;
+    }
+    public void setState(Boolean stateInput) {
+        state = stateInput;
     }
     public String getName() {
         return name;
     }
-    public void setName(String setName) {
-        this.name = setName;
-    }
-    public String getDate() {
-        return date;
-    }
-    public void setDate(String setDate) {
-        this.date = setDate;
+    public boolean getState() {
+        return state;
     }
 }

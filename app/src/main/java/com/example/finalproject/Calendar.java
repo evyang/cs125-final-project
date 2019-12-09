@@ -13,6 +13,8 @@ public class Calendar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_calendar);
 
+        Button home = findViewById(R.id.home);
+        home.setOnClickListener(unused -> finish());
     }
 
 }

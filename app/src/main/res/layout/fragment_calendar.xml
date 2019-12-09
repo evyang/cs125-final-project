@@ -9,20 +9,21 @@
 
         <Button
             android:id="@+id/home"
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Home" />
 
         <Button
             android:id="@+id/profile"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Profile" />
 
         <Button
             android:id="@+id/calendar"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Calendar" />
