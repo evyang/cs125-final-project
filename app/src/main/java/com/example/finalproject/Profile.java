@@ -22,6 +22,8 @@ public class Profile extends AppCompatActivity {
         enterName.setVisibility(View.GONE);
         TextView textName = findViewById(R.id.textName);
         textName.setVisibility(View.GONE);
+        TextView editNameText = findViewById(R.id.editNameText);
+        editNameText.setVisibility(View.GONE);
         upDateUI();
         Button editName = findViewById(R.id.editName);
         editName.setOnClickListener(unused -> editName());
@@ -42,22 +44,32 @@ public class Profile extends AppCompatActivity {
 
     public void editName() {
         ImageView profilePic = findViewById(R.id.imageView3);
+        Button editName = findViewById(R.id.editName);
         TextView profileTitle = findViewById(R.id.profileTitle);
         TextView totalTask = findViewById(R.id.taskTotal);
         TextView completeTask = findViewById(R.id.taskComplete);
         EditText setName = findViewById(R.id.newName);
         Button enterName = findViewById(R.id.enterName);
+        TextView editNameText = findViewById(R.id.editNameText);
+        editNameText.setVisibility(View.VISIBLE);
         TextView textName = findViewById(R.id.textName);
         totalTask.setVisibility(View.GONE);
         completeTask.setVisibility(View.GONE);
         profilePic.setVisibility(View.GONE);
+        editName.setVisibility(View.GONE);
         profileTitle.setVisibility(View.GONE);
         setName.setVisibility(View.VISIBLE);
+        setName.setText("");
         enterName.setVisibility(View.VISIBLE);
         textName.setVisibility(View.VISIBLE);
         enterName.setOnClickListener(unused -> {
             String newName = setName.getText().toString();
+            if (newName.trim().equals("")) {
+                newName = "Geoff Challen";
+            }
             totalTask.setVisibility(View.VISIBLE);
+            editName.setVisibility(View.VISIBLE);
+            editNameText.setVisibility(View.GONE);
             completeTask.setVisibility(View.VISIBLE);
             profilePic.setVisibility(View.VISIBLE);
             profileTitle.setVisibility(View.VISIBLE);
@@ -65,7 +77,6 @@ public class Profile extends AppCompatActivity {
             enterName.setVisibility(View.GONE);
             textName.setVisibility(View.GONE);
             profileTitle.setText(newName);
-            System.out.println("**");
         });
     }
 }

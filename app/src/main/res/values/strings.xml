@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Final Project</string>
+    <string name="app_name">InspireTask</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Profile</string>
     <string name="title_notifications">Calendar</string>

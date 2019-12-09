@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -40,16 +41,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addTask() {
-        TextView e = findViewById(R.id.name);
+        EditText e = findViewById(R.id.name);
         String eventName= e.getText().toString();
         if (!(eventName.equals(""))) {
             tasks.add(new Task(eventName));
             totalTask++;
-            //e.setText("");
-            updatePlayersUI();
+            e.setText("");
+            updateMainUI();
         }
     }
-    private void updatePlayersUI() {
+    private void updateMainUI() {
         LinearLayout tasksList = findViewById(R.id.taskList);
         tasksList.removeAllViews();
         for (int i = 0; i < tasks.size(); i++) {
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             Button delete = taskView.findViewById(R.id.deleteTask);
             delete.setOnClickListener(unused -> {
                 tasks.remove(t);
-                updatePlayersUI();
+                updateMainUI();
             });
             Button done = taskView.findViewById(R.id.taskComplete);
             done.setOnClickListener(unused -> {

@@ -12,6 +12,7 @@
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#E96053"
             android:text="Home" />
 
         <Button
@@ -19,6 +20,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#F7B064"
             android:text="Profile" />
 
         <Button
@@ -26,6 +28,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#FCEE90"
             android:text="Calendar" />
 
     </LinearLayout>

@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#E96053"
             android:text="Home" />
 
         <Button
@@ -22,6 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#F7B064"
             android:text="Profile" />
 
         <Button
@@ -29,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#FCEE90"
             android:text="Calendar" />
 
     </LinearLayout>
@@ -80,6 +83,13 @@
             android:text="Total Tasks Completed"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
+        <TextView
+            android:id="@+id/editNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit your name below:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -104,6 +114,7 @@
             android:id="@+id/enterName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#C07DE4"
             android:text="Enter" />
 
     </LinearLayout>
